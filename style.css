@@ -1,45 +1,45 @@
-
-  
-   /* ..................body stijl ...................... */
-  
-  body {
-	  margin: 0;
-	  background-image: url(./images/Exploreimgs/backgroundacnh.jpeg); 
+/* ..................body stijl ...................... */
+   
+body {
+	margin: 0;
+	background-image: url(./images/Exploreimgs/backgroundacnh.jpeg); 
 	animation-name: backgroundmove;
 	animation-duration: 35s;
 	animation-iteration-count: infinite;
 	animation-fill-mode: both;
-	}
+}
 
-  
-  
-   /* ...................tweede deel = MAIN ...................... */
-   /* main {
-  margin: 1em;
-   } */
-   main img {
-		  margin: 1em;
-      margin-right: 0em;
-      margin-left: 0em;
-  width: 20.5em;
+body.reduceMotion{
+  margin: 0;
+	background-image: url(./images/Exploreimgs/backgroundacnh.jpeg); 
+	animation-duration: 0s;
+  animation-iteration-count:none;
+	animation-fill-mode: none;
+}
 
-  }
+/* ...................tweede deel = MAIN ...................... */
 
-  main section{
+main img {
 	margin: 1em;
-  }
+  margin-right: 0em;
+  margin-left: 0em;
+  width: 20.5em;
+}
+
+main div{
+margin: 1em;
+}
   
-main section:nth-child(1){
+main div:nth-child(1) {
 	background-color: var(--sectioncolor-background);
 	margin: 0;
 	margin-bottom: 4em;
 	padding: 2em;
-display: flex;
-flex-direction: column;
-	
-  }
+  display: flex;
+  flex-direction: column;	
+}
   
-    h1, h2{
+h1, h2 {
   color: var(--Hoofdkopjes);
   text-align: center;
   margin: 0em;
@@ -49,233 +49,199 @@ flex-direction: column;
   /* header fonts */
   font-family: 'Saira', sans-serif;
   font-family: 'Zilla Slab', serif;
-  }
+}
   
-  h1 {
-	  background-color:  var(--mainribboncolor) ;
-	  font-size: 1.25em;
-	  padding: 1.25em;
+h1 {
+	background-color:  var(--mainribboncolor) ;
+	font-size: 1.25em;
+	padding: 1.25em;
   border-radius: 0.3em;
   margin: 1em;
   filter: drop-shadow(0.2em 0.2em 0.2em rgba(0, 0, 0, 0.226));
-	  }
+}
   
-  p {
-		  color:  var(--color-text );
-		  font-size: 0.8em;
-		  text-align: center;
-		  line-height: 1.5em;
-		  margin: 0em;
-  }
+p {
+	color:  var(--color-text );
+	font-size: 0.8em;
+	text-align: center;
+	line-height: 1.5em;
+	margin: 0em;
+}
 	  
-  video {
-	  margin: 1em;
-    margin-left: 0em;
-    margin-right: 0em;
-	  align-content: center;
-    width: 90vw;
-	  
+video {
+  margin: 1em;
+  margin-left: 0em;
+  margin-right: 0em;
+	align-content: center;
+  width: 90vw;
+}
   
-  }
-  
-  main section:nth-child(1) p, h2{
-font-size: 0.95em;
+main div:nth-child(1) p, h2 {
+  font-size: 0.95em;
 	padding-bottom: 0.5em;
-
-
-  }
+}
   
 
-  section article:nth-of-type(1) {
-	  background-color: var(--sectioncolor-background);
+div article:nth-of-type(1) {
+	background-color: var(--sectioncolor-background);
   padding: 1.7em;
   border-radius: 1em;
-  border: solid 0.75em rgb(0, 129, 96, 0.65) ;
-  }
+  border: solid 0.75em var(--sectionbordercolor);
+}
   
-   article:nth-of-type(2) {
-  background-color: green;
-  padding: 1.7em;
-  border-radius: 1em;
+
   
-  }
-  
-  section section {
+div div {
   display: grid;
   grid-template-columns: 12em 1em;
   margin: 1em;
   margin-bottom: 2.5em;
-  }
+}
   
-  section section img {
-	  width:8em;
-	  position: absolute;
-	  left: 12em;
-  }
+div div img {
+	width:8em;
+	position: absolute;
+	left: 12em;
+}
   
-  section section p{
+div div p{
+  background-color: var(--sectioncolor-background);
+  border-radius: 2em;
+	height: 7em;
+  padding: 1em ;
+	margin: 1em;
   
-	  background-color: var(--sectioncolor-background);
-	  border-radius: 2em;
-	  height: 7em;
-  
-	  padding:1em ;
-	  margin: 1em;
-  
-	  font-family: 'Saira', sans-serif;
+	font-family: 'Saira', sans-serif;
   font-family: 'Zilla Slab', serif;
-  
-  }
+}
 
-  section:nth-of-type(4) img {
-	  
-	  position: relative;
+
+div:nth-of-type(1) video {
+  border: none;
+  order: -1;
+  box-shadow: none;
+  width: auto;
+  margin: 0em;
+}
+
+div:nth-of-type(4) img {  
+	position: relative;
   top: -2em;
   width: 15.4em;
   left: 3em;
-  
-  }
-  
-  section:nth-of-type(6) article, section:nth-of-type(3) article{
-	  background-color: var(--secundairysectioncolor);
-	  border: none;
-	  border-radius: 0.5em;
 
+}
   
-  }
+div:nth-of-type(6) article, div:nth-of-type(3) article {
+	background-color: var(--secundairysectioncolor);
+	border: none;
+	border-radius: 0.5em;
+}
   
-  section:nth-of-type(6) article h2,  section:nth-of-type(3) article h2 {
-	  color: var(--color-text);
-	  font-size: 1em;
-	  margin-bottom: 1em ;
-	  
+div:nth-of-type(6) article h2,  div:nth-of-type(3) article h2 {
+  font-size: 1em;
+	margin-bottom: 1em;
+}
   
-  }
+div:nth-of-type(6) article p {
+  margin: 0.5em;
+}
   
-  section:nth-of-type(6) article p{
-	  margin: 0.5em;
-  }
-  
-  section:nth-of-type(6) section {
+div:nth-of-type(6) div {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row-reverse;
-position: relative;
-align-content: center;
+  position: relative;
+  align-content: center;
+}
+
+div:nth-of-type(6) div p {
+  background-color: var(--menucolor);
 
 }
 
-section:nth-of-type(6) section p {
-background-color: var(--menucolor);
-
-}
-
-
-section:nth-of-type(6) section img:nth-of-type(1) {
+div:nth-of-type(6) div img:nth-of-type(1) {
 	width: 17em;
-position: relative;
-left: -3em;
-top: -3em;
-
+  position: relative;
+  left: -3em;
+  top: -3em;
 }
 
-section:nth-of-type(7) {
-background-color: var(--sectioncolor-background);
-background-image: url(./images/Exploreimgs/backgroundendacnh.png);
-margin: 0em;
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-align-items: center;
-
+div:nth-of-type(7) {
+  background-color: var(--sectioncolor-background);
+  background-image: url(./images/Exploreimgs/backgroundendacnh.png);
+  margin: 0em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
-section:nth-of-type(7) h2 {
+div:nth-of-type(7) h2 {
 	color: var(--color-text);
   font-size: 1.5em;
   margin-top: 1em;
 }
 
-	section:nth-of-type(7) a {
+div:nth-of-type(7) a {
 	background-color: var(--color-text);
+  color: var(--whitetextdarkmode);
 	width: 10em;
 	padding: 1em;
 	border-radius: 1.25em;
   margin-top: 1em;
-  color: var(--sectioncolor-background);
-  font-family: 'Saira', sans-serif;
   font-family: 'Zilla Slab', serif;
-  font-size: 1.1em;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
+}
+div:nth-of-type(7) a:hover {
+background-color: var( --hoverbuttonbg);
+}
+div:nth-of-type(7) a:active {
+  background-color: var( --hoverbuttonbg);
+  box-shadow: inset 0.2em 0.2em 0.2em  rgb(114, 11, 19) ;
+  }
 
-		}
+div:nth-of-type(7) img:nth-last-of-type(2) {
+  order: -1;margin-bottom: 0em; 
+}
 
-
- section:nth-of-type(7) img:nth-last-of-type(2){
-order: -1;
-margin-bottom: 0em;
-      
-              }
-
-	
-
-  img[src$=".jpg"], video, figure img {
-	border: 0.5em solid white;
+img[src$=".jpg"], video, figure img {
+	border: 0.5em solid var(--borderimages);
 	box-shadow:0.2em 0.2em 0.2em rgba(7, 7, 7, 0.355)
-	
 }
 
-section:nth-of-type(1) video {
-border: none;
-order: -1;
-box-shadow: none;
-width: auto;
-margin: 0em;
-}
 
-	  img[src="./images/Exploreimgs/logo-acnh-en-2x.png"] {
+img[src="./images/Exploreimgs/logo-acnh-en-2x.png"] {
   position: absolute;
   top: 18em;
   left: 9em;
   width: 6em;
-   margin: 0em;
-   filter: drop-shadow(0.2em 0.2em 0.2em rgba(0, 0, 0, 0.518));
-  
-  }
-
-  img[src="./images/Exploreimgs/playerwateringflowers.png"] {
-	  width: 10em;	  
-	  position: relative;
-	  left: 4em;
-	  top: 1em;
-	
-  }
-
-  /* img[src="./images/Exploreimgs/flowers-char-2x.png"] {
-	width: 6em;
-} */
-img[src="./images/Exploreimgs/flowers-char-2x.png"] p {
-background-color: aliceblue;
+  margin: 0em;
+  filter: drop-shadow(0.2em 0.2em 0.2em rgba(0, 0, 0, 0.518));
 }
 
+img[src="./images/Exploreimgs/playerwateringflowers.png"] {
+	width: 10em;	  
+	position: relative;
+  left: 4em;
+  top: 1em;
+}
 
+img[src="./images/Exploreimgs/flowers-char-2x.png"] p {
+  background-color: aliceblue;
+}
 
-  figure {
-display: flex;
-flex-direction: row;
-overflow-x: scroll;
-
-
-
-  }
+figure {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
   
-  figure img {
+figure img {
 	width: 65vw;
 	margin: 0em;
-  }
+}
   
   
   
